@@ -24,7 +24,7 @@
 
 <div class="container">
 
-	<form class="form-signin" method="get" action="login">
+	<form class="form-signin" method="post" action="login">
 		<h1 class="form-signin-heading text-muted">Sign In</h1>
 		<input type="text" name="usuario" class="form-control" placeholder="User" required="" autofocus="">
 		<input type="password" name="pass" class="form-control" placeholder="Password" required="">

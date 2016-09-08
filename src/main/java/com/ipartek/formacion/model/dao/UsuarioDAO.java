@@ -2,6 +2,8 @@ package com.ipartek.formacion.model.dao;
 
 import java.util.List;
 
+import javax.sql.DataSource;
+
 import com.ipartek.formacion.pojo.Usuario;
 
 public interface UsuarioDAO {
@@ -22,6 +24,12 @@ public interface UsuarioDAO {
 	Usuario buscarPorId(int id);
 
 	List<Usuario> listar();
+
+	/**
+	 * This is the method to be used to initialize database resources ie.
+	 * connection.
+	 */
+	public void setDataSource(DataSource ds);
 
 	/**
 	 * Comprobar si {@code Usuario} existe en la base de datos

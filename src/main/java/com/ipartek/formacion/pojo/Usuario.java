@@ -9,7 +9,7 @@ package com.ipartek.formacion.pojo;
 public class Usuario {
 
 	// propiedades
-	private long id;
+	private int id;
 	private String nombre;
 	private String password;
 	private String email;
@@ -23,13 +23,21 @@ public class Usuario {
 		this.email = "";
 	}
 
+	public Usuario(int id, String nombre, String password, String email) {
+		super();
+		this.id = id;
+		this.nombre = nombre;
+		this.password = password;
+		this.email = email;
+	}
+
 	// Getters y Setters
 
-	public long getId() {
+	public int getId() {
 		return this.id;
 	}
 
-	public void setId(long idUsuario) {
+	public void setId(int idUsuario) {
 		this.id = idUsuario;
 	}
 
