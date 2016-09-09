@@ -77,9 +77,10 @@
     border-top:1px solid rgba(0,0,0,0.08);
   }
   
-  .form-signin input[type="text" name="pass"] {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+  .form-signin input[type="password" ] {
+   margin-bottom: -1px;
+    border-bottom-left-radius: solid;
+    border-bottom-right-radius: solid;
     border-top-style: solid;
     border-right-style: solid;
     border-bottom-style: none;
@@ -87,11 +88,11 @@
     border-color: #000;
   }
   
-  .form-signin input[type="password" name="repass"] {
+  .form-signin #repass{
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     border-top-style: none;
-    border-right-style: solid;
+    border-right-style: 2px solid;
     border-bottom-style: solid;
     border-left-style: solid;
     border-color: rgb(0,0,0);

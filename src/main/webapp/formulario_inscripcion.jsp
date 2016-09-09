@@ -14,7 +14,7 @@
 			<input type="text" name="nombre" class="form-control" placeholder="User" required="" autofocus="">
 			<input type="email" id="inputEmail" name="email" class="form-control" placeholder="Email" required="">
 			<input type="password" name="pass" class="form-control" placeholder="Password" required="">
-			<input type="password" name="repass" class="form-control" placeholder="Password Confirm" required="">
+			<input type="password" id="repass" name="repass" class="form-control" placeholder="Password Confirm" required=""><br>
 			<button class="btn btn-lg btn-primary btn-block" type="submit">
 				REGISTRARSE
 			</button>
@@ -57,10 +57,10 @@
 	    		}).done(function( data ) {
 	    			if ( data.encontrado ){
 	    		    	console.debug("Existe email");
-	    		    	$("#inputEmail").css('color','green');
+	    		    	$("#inputEmail").css('color','red');
 	    			}else{
 	    				console.debug("NO Existe email");
-	    				$("#inputEmail").css('color','red');
+	    				$("#inputEmail").css('color','green');
 	    			}	
 	    		});
 	    	
