@@ -28,7 +28,7 @@
 	    	//obtener valor del input
 	    	var emailValue = $(this).val();
 	    	console.debug(emailValue);
-	    	
+	    		    	
 	    	//lamada Ajax al servidor
 	    	// CUIDADO llamada asincrona
 	    	$.ajax({	    		
@@ -39,8 +39,10 @@
 	    		}).done(function( data ) {
 	    			if ( data.encontrado ){
 	    		    	console.debug("Existe email");
+	    		    	$("#inputEmail").css('color', 'green');
 	    			}else{
 	    				console.debug("NO Existe email");
+	    				$("#inputEmail").css('color', 'red');
 	    			}	
 	    		});
 	    	
