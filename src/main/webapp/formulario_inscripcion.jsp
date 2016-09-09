@@ -11,9 +11,9 @@
 	
 		<form class="form-signin" method="post" action="registrar">
 			<h1 class="form-signin-heading text-muted">CREAR NUEVA CUENTA</h1>
-			<input type="text" name="nombre" class="form-control" placeholder="User" required="" autofocus=""><br>
-			<input type="email" id="inputEmail" name="email" class="form-control" placeholder="Email" required=""><br>
-			<input type="password" name="pass" class="form-control" placeholder="Password" required=""><br>
+			<input type="text" name="nombre" class="form-control" placeholder="User" required="" autofocus="">
+			<input type="email" id="inputEmail" name="email" class="form-control" placeholder="Email" required="">
+			<input type="password" name="pass" class="form-control" placeholder="Password" required="">
 			<input type="password" name="repass" class="form-control" placeholder="Password Confirm" required="">
 			<button class="btn btn-lg btn-primary btn-block" type="submit">
 				REGISTRARSE
