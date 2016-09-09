@@ -19,7 +19,7 @@ USE `vc16`;
 -- Volcando estructura para tabla vc16.usuario
 DROP TABLE IF EXISTS `usuario`;
 CREATE TABLE IF NOT EXISTS `usuario` (
-  `id` int(10) unsigned NOT NULL,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `nombre` varchar(150) NOT NULL,
   `password` varchar(50) NOT NULL,
   `email` varchar(250) NOT NULL,
