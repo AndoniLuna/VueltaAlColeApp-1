@@ -26,8 +26,25 @@
 	    $( "#inputEmail" ).keyup(function( event ) {
 	    	//console.log( "tecla pulsada" );
 	    	//obtener valor del input
-	    	var email = $(this).val();
-	    	console.debug(email);
+	    	var emailValue = $(this).val();
+	    	console.debug(emailValue);
+	    	
+	    	//lamada Ajax al servidor
+	    	// CUIDADO llamada asincrona
+	    	$.ajax({	    		
+	    		  method: "GET",
+	    		  url: "checkemail",
+	    		  data: { email: emailValue }
+	    	
+	    		}).done(function( data ) {
+	    			if ( data.encontrado ){
+	    		    	console.debug("Existe email");
+	    			}else{
+	    				console.debug("NO Existe email");
+	    			}	
+	    		});
+	    	
+	    	//Las siguientes lineas se procesan seguidas
 	    	
 	    });
 	    

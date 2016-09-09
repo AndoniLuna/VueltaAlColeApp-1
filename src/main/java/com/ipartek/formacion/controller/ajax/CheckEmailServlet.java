@@ -41,15 +41,28 @@ public class CheckEmailServlet extends HttpServlet {
 
 	private void doProccess(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
+		// recoger parametros
+		final String emailAbuscar = request.getParameter("email");
+
 		// charset utf-8
 		response.setCharacterEncoding("utf-8");
 		// response-type JSON
 		response.setContentType("application/json");
+
+		// TODO llamar servicio
+		boolean encontrado = false;
+		final String emailHardcoded = "pepe@pepe.com";
+		if (emailHardcoded.equals(emailAbuscar)) {
+			encontrado = true;
+		}
+
 		// conseguir out
 		final PrintWriter out = response.getWriter();
 		// pintar respuesta
 		final JSONObject json = new JSONObject();
-		json.put("encontrado", true);
+		json.put("encontrado", encontrado);
+		json.put("email", emailAbuscar);
+
 		out.print(json.toString());
 
 	}
