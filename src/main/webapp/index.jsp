@@ -14,6 +14,9 @@
 	}
 %>
 
+<a href="formulario_inscripcion.jsp">Darte de Alta</a>
+
+
 <form action="login" method="post">
 	
 	<input type="text" name="nombre" placeholder="Tu Nombre" required>
